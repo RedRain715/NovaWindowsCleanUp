@@ -280,7 +280,7 @@ function Set-WallpaperFromGithub {
     
     try {
         # Resmi geçici klasöre indir
-        $wallpaperPath = "$env:TEMP\wallpaper.jpg"
+        $wallpaperPath = "$env:TEMP\backgound.png"
         Invoke-WebRequest -Uri $ImageUrl -OutFile $wallpaperPath
         
         # Arkaplan stilini ayarla
@@ -315,7 +315,7 @@ function Set-WallpaperFromGithub {
 }
 
 # GitHub'dan arkaplanı değiştir
-$wallpaperUrl = "https://raw.githubusercontent.com/mre31/NovaWindowsCleanUp/main/wallpaper.png"
+$wallpaperUrl = "https://raw.githubusercontent.com/RedRain715/NovaWindowsCleanUp/main/background.png"
 Set-WallpaperFromGithub -ImageUrl $wallpaperUrl -WallpaperStyle "Fill"
 
 
